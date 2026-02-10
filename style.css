@@ -1,0 +1,21 @@
+/*
+Beige: #F7F3EB
+Cream: #FDFAF6
+Light Sage: #E4EFE7
+Sage: #99BC85
+Dark Green: #286141
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F7F3EB;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
