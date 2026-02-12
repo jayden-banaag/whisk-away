@@ -11,23 +11,23 @@ Dark Green: #286141
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-h1{
-    font-family: "Playfair Display", serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #286141;
+html{
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color: #F7F3EB;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #F7F3EB 67%, #99BC85 50%);
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 10px 10px;
+    width: 100%;
+    position: fixed;
 }
 
 .title-logo{
@@ -39,6 +39,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     gap: 10px;
+    margin-top: -15px;
 }
 
 nav a{
@@ -47,7 +48,7 @@ nav a{
     padding: 10px 20px;
     border-radius: 5px;
     transition: color .75s ease, transform .75s ease;
-    font-size: 18px;
+    font-size: 1.2rem;
     display: inline-block;
 }
 
@@ -58,21 +59,102 @@ nav a:hover{
 }
 
 main{
-    padding: 60px 40px;
-    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 50px 100px;
 }
 .logo{
-    width: 200px;
+    width: 35%;
     height: auto;
+    margin-right: -200px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: 100px;
+    margin-top: 40px;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
     margin-bottom: 20px;
+    color: #286141;
+}
+h2{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
     color: #286141;
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #333;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button-order{
+    background-color: #286141;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button-order:hover{
+    background-color: #99BC85;
+}
+
+.button-menu{
+    background-color: transparent;
+    color: #286141;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid #286141;
+    transition: all 0.3s ease;
+}
+
+.button-menu:hover{
+    background-color: #E4EFE7;
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDFAF6;
+    padding: 60px 40px;
+}
+
+#menu{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDFAF6;
+    padding: 60px 40px;
+}
+
+#contacts{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4EFE7;
+    padding: 60px 40px;
 }
