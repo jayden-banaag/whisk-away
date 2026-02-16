@@ -1,7 +1,6 @@
 /*
 Beige: #F7F3EB
 Cream: #FDFAF6
-Light Sage: #E4EFE7
 Sage: #99BC85
 Dark Green: #286141
 */
@@ -28,6 +27,7 @@ header{
     padding: 10px 10px;
     width: 100%;
     position: fixed;
+    backdrop-filter: blur(1px);
 }
 
 .title-logo{
@@ -139,6 +139,38 @@ p{
     justify-content: center;
     background-color: #FDFAF6;
     padding: 60px 40px;
+    gap: 20px;
+}
+
+.about-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img{
+    width: 100%;
+    max-width: 350px;  
+    height: auto;
+    border-radius: 10px;  
+}
+
+.about-text-container{
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text-container h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text{
+    font-size: 1.1rem;
+    line-height: 1.8;  
+    color: #333;
+    text-align: justify;
 }
 
 #menu{
@@ -146,15 +178,63 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FDFAF6;
+    background-color: #F7F3EB;  
     padding: 60px 40px;
 }
 
 #contacts{
-    min-height: 100vh;
+    background-color: #99BC85;
+    color: white;
+    padding: 60px 90px 20px;
+}
+
+.footer-content{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E4EFE7;
-    padding: 60px 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.footer-section h2{
+    color: #286141;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section h3{
+    color: #286141;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p{
+    color: #286141;
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+.footer-section a{
+    color: #286141;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover{
+    color: white;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #99BC85;
+    color: #E4EFE7;
+    font-size: 0.9rem;
 }
